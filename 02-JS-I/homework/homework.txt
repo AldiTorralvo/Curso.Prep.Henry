@@ -1,0 +1,108 @@
+Definición de Variables: 
+
+Un Variable es asignarle un dato que despues se puede cambiar, no es algo fijo, es la forma de asignación de valores.
+
+
+Una variable es una forma de almacenar el valor de algo para usar más tarde. (Una nota para aquellos con conocimientos previos de programación: Javascript es un lenguaje de tipado dinámico, una variable se puede configurar (y restablecer) a cualquier tipo, no necesitamos declarar su tipo al iniciar la variable).
+
+Para crear una variable en JavaScript utilizamos la palabra clave `var`, seguida de un espacio y el nombre de la variable (con este nombre podremos hacer referencia a ella luego). Además de declarar una variable, podemos asignarle un valor usando el signo `=`.
+
+> Nota: Las palabras claves o keywords son palabras especiales que utiliza el lenguaje para indicar algo. No podremos usas las palabras claves del lenguaje cómo nombres de variables.
+
+Existen tres formas de declarar una variable:
+
+```javascript
+    var nombre = 'Juan'; // Vamos a usar principalemente esta forma
+    let apellido = 'Perez';
+    const comidafavorita = 'Pizza';
+
+### var
+
+`var` es la forma declarar una variable en ES5 (ES5 es la versión de JS, hoy en día existe ES6 que es la nueva versión, pero que todavía no es la más usada). Esta es una _palabra clave_ genérica para "variable".
+
+Las dos formas siguentes, si bien son válidas, vamos a utilizarlas más adelante en la carrera, cuando tengamos más claros otros conceptos:
+
+### let
+
+`let` es una nueva palabra clave de ES6, esto asignará una variable muy similar a `var`, pero con un comportamiento un poco diferente. Lo más notable es que difiere al crear un "nivel de _scope_" (hablaremos sobre esto más adelante).
+
+### const
+
+`const` también es nuevo en ES6. Un `const` es una variable que no se podrá cambiar. Esto es la abreviatura de "constante".
+
+Definición de Strings: 
+
+Un Strings es un tipo de dato, de tipo de texto y siempre entre comillas pueden ser '' o ¨¨ cualquier texto entre estas comillas se considera un una cadena o String. 
+
+## Tipos de Datos
+
+En ciencias de la computación, un tipo de dato informático o simplemente tipo, es un atributo de los datos que indica la clase de datos que se va a manejar. Esto incluye imponer restricciones en los datos, como qué valores pueden tomar y qué operaciones se pueden realizar.
+
+Los tipos de datos aceptados varían de lenguaje en lenguaje.
+
+### Strings, Numbers, and Booleans
+
+Estos son los tipos de datos más básicos en Javascript.
+
+### Strings
+
+Las "strings" son bloques de texto, siempre se definirán entre comillas, ya sea simple o doble. Cualquier texto entre comillas es una cadena o string.
+
+Definición de Funciones: 
+
+Una función es aquello que me permitirá interactuar con mi programa, ejecutará las ordenes que le doy por medio de una función que cree, siempre que cumpla con su "anatomía" y las condiciones en su sintaxis. 
+
+## Introducción a las Funciones
+
+Las funciones son una parte muy importante de todo lenguaje de programacion y sobre todo en JavaScript. Són tipos particulares de Objetos, llamados `callable objects` u objetos invocables, por lo que tienen las mismas propiedades que cualquier objeto.
+
+Ahora que tenemos un conjunto de variables, necesitamos funciones para calcularlas, cambiarlas, hacer algo con ellas. Hay tres formas en que podemos construir una función.
+
+```javascript
+    function miFuncion() {}
+    var otraFuncion = function () {};
+    var yOtra = () => {};
+```
+
+Usaremos la primera forma en esta lección y hablaremos sobre las otras formas en próximas lecciones.
+
+### Anatomía de una Función
+
+```javascript
+function miFuncion() {}
+```
+
+Una función comenzará con la palabra clave `function`, esto le dice a lo que sea que esté ejecutando tu programa que lo que sigue es una función y que debe tratarse como tal. Después de eso viene el nombre de la función, nos gusta dar nombres de funciones que describan lo que hacen. Luego viene un paréntesis abierto y uno cercano. Y finalmente, abra y cierre los corchetes. Entre estos corchetes es donde irá todo nuestro código a ejecutar.
+
+```javascript
+function logHola() {
+    console.log('hola!');
+}
+
+logHola();
+```
+
+En este ejemplo declaramos una función `logHola` y la configuramos en` console.log` `'hello'`. Entonces podemos ver que para ejecutar esta función, necesitamos escribir el nombre y los paréntesis. Esta es la sintaxis para ejecutar una función. Una función siempre necesita paréntesis para ejecutarse.
+
+Definición de Declaraciones IF:
+
+Se utiliza IF cuando quiero verificar que un dato es verdadero, si cumple con la condición que yo le solicito me devuelve como un dato "true" y si no cumple comn esa condición, me arroja "false".
+## Control de flujo y operadores de comparación
+
+En este ejemplo, vamos a utilizar operadores de control de flujo y comparación. El flujo de control ("control flow") es una forma de que nuestra función verifique si algo es `true`, y ya sea ejecutando el código suministrado si es así o avanzando si no lo es. Para esto usaremos la palabra clave `if`:
+
+```javascript
+function puedeManejar(edad) {
+    if (edad > 18) {
+        return true;
+    }
+
+    return false;
+}
+
+puedeManejar(22); // true
+```
+
+Aquí estamos tomando un número (`edad`) y verificando si la declaración es` true` (`22>18`), lo es, por lo que devolveremos` true`, y la función se detendrá. Si no es así, omitirá ese código y la función devolverá `false`.
+
+Definición Valores Booleanos (True/False)
