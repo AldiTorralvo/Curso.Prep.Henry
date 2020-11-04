@@ -1,0 +1,33 @@
+En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+for
+&&, ||, !
+
+--> FOR: Bucle FOR 
+Es una estructura de control en la que se puede indicar de antemano el número maximo de iteraciones o bien repetir varias veces un proceso.
+De manera resumida, en vez de hacer 1+1+1+1+1+1+1+1+1 reemplazarlo con el incremetador de variable que sería i++
+Para su uso:
+for (variable; condición; i++){
+	console.log(i);
+}
+
+--> &&: 
+Es unoperador logico que nos permite combinar dos expresiones de igualdad y preguntar si son verdaderas, en este caso (&&) es  'Y' o 'AND', evalua ambas expresiones y devolvera verdadero si ambas son true, de lo contrario, devolvera false.
+
+TRUE && TRUE === TRUE
+TRUE && FALSE === FALSE
+FALSE && TRUE === FALSE
+FALSE && FALSE === FALSE 
+
+--> ||: 
+Es otro operador logico, es 'O' o 'OR', y se ejectua si una de las expresiones es TRUE, y solo si ambas expresiones son falsas devolverá FALSE.
+
+TRUE || TRUE === TRUE
+TRUE || FALSE === TRUE
+FALSE || TRUE === TRUE 
+FALSE || FALSE === FALSE 
+
+--> !: 
+Ultimo operador logico 'NO' o 'NOT' lo que hace este operador es negar una afirmación y declarar lo opesto. 
+
+TRUE ! TRUE === FALSE
+FALSE ! FALSE === TRUE 
